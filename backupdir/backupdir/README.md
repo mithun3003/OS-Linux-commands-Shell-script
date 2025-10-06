@@ -380,7 +380,7 @@ cat urllist.txt | tr -d ' ' | tr -s '.'
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-![alt text](<imgs/tar -cvf backup.tar *.png>)
+
 
 mkdir backupdir
  
@@ -391,29 +391,28 @@ cd backupdir
 tar -tvf backup.tar
 ## OUTPUT
 
-![alt text](<imgs/tar -tvf backup.tar.png>)
 
 tar -xvf backup.tar
 ## OUTPUT
-![alt text](<imgs/tar -xvf backup.tar.png>)
+
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
-![alt text](<imgs/ls .gz.png>)
+ 
 gunzip backup.tar.gz
 ## OUTPUT
-![alt text](<imgs/gunzip backup.tar.gz.png>)
+
  
 # Shell Script
 ```
 echo '#!/bin/sh' > my-script.sh
-echo 'echo Hello World‘; exit 0 >> my-script.sh 
+echo 'echo Hello World‘; exit 0 >> my-script.sh
 ```
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
-![alt text](<binecho Hello World.png>)
+
  
 cat << stop > herecheck.txt
 ```
@@ -425,7 +424,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
-![alt text](<cat herecheck.txt.png>)
+
 
 cat < scriptest.sh 
 ```bash
@@ -463,27 +462,25 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
-![alt text](<miscriptest.sh 1 2 3.png>)
+
  
 ls file1
 ## OUTPUT
-![alt text](<ls file1.png>)
 
 echo $?
-## OUTPUT !
-![alt text](<echo ipa.png>)
+## OUTPUT 
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- ![alt text](<echo  summa.png>)
+ 
 abcd
  
 echo $?
  ## OUTPUT
 
-![alt text](<echo  ooh.png>)
+
  
 # mis-using string comparisons
 
@@ -515,13 +512,13 @@ fi
 ```
 ##OUTPUT
 
-![alt text](<cat strcomp.sh.png>)
+
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-![alt text](mistrcomp.sh.png)
+
 
 # check file ownership
 cat < psswdperm.sh 
@@ -548,7 +545,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
-![alt text](miipsswdperm.sh.png)
+
 # check if with file location
 cat>ifnested.sh 
 ```bash
@@ -595,7 +592,7 @@ fi
 ./ifnested.sh 
 ## OUTPUT
 
-![alt text](miiifnested.sh.png)
+
 
 # using numeric test comparisons
 cat > iftest.sh 
@@ -636,9 +633,9 @@ fi
 
 $ chmod 755 iftest.sh
  
-$ ./iftest.sh
-## OUTPUT
-![alt text](miiiiftest.sh.png)
+$ ./iftest.sh 
+##OUTPUT
+
 # check if a file
 cat > ifnested.sh 
 ```bash
@@ -686,8 +683,7 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-## OUTPUT
-![alt text](miiiifnested.sh.png)
+##OUTPUT
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -717,7 +713,6 @@ $ chmod 755 elifcheck.sh
 $ ./elifcheck.sh 
 ## OUTPUT
 
-![alt text](elifcheck.sh.png)
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -733,7 +728,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-![alt text](miiiinifcompound.sh.png)
+
 # using the case command
 cat >casecheck.sh 
 ```bash
