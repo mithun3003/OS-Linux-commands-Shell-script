@@ -1,5 +1,5 @@
 case $USER in
-Ram | Robert)
+Mithun | Mithun)
 echo "Welcome, $USER"
 echo "Please enjoy your visit";;
 Rahim)

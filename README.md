@@ -42,7 +42,7 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-![File1](imgs/file1.png)
+![alt text](<cat \< file1mdejjeeeqf.png>)
 
 
 cat < file2
@@ -752,8 +752,11 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
+## OUTPUT
+
+![alt text](<casecheck nn.png>)
  
-cat > whiletest
+cat whiletest.sh
 ```bash
 #!/bin/bash
 #while command test
@@ -780,10 +783,14 @@ var1=$[ $var1 - 25 ]
 done
 ``` 
 $ chmod 755 untiltest.sh
+
+$ ./untiltest.sh
+## OUTPUT
+![alt text](<chmod 755 untiltest.sh.png>)
  
  
  
-cat forin1.sh 
+cat >forin1.sh 
 ```bash
 \#!/bin/bash
 \#basic for command
@@ -793,8 +800,11 @@ echo The next state is $test
 done
  ```
  
-$ chmod 755 forin1.sh
- 
+$ ./forin1.sh
+
+ ## OUTPUT
+
+ ![alt text](forin1.sh.png)
  
 cat forin2.sh 
 ```bash
@@ -820,6 +830,8 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
+## OUTPUT
+![alt text](forin2.sh.png)
  
 cat forin3.sh 
 ```bash
@@ -877,9 +889,10 @@ echo "The value of i is $i"
 done
 ````
 $ chmod 755 forctype.sh
+
 $ ./forctype.sh 
 ## OUTPUT
-
+![alt text](<forctype shff.png>)
 cat forctype1.sh 
 ```bash
 #!/bin/bash
