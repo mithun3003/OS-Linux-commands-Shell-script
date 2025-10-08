@@ -472,6 +472,7 @@ ls file1
 echo $?
 ## OUTPUT !
 ![alt text](<echo ipa.png>)
+
 ./one
 bash: ./one: Permission denied
  
@@ -770,8 +771,9 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
- 
+## OUTPUT
+
+ ![alt text](whiletest.sh.png)
 cat untiltest.sh 
 ```bash
 \#using the until command
@@ -843,7 +845,9 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- 
+## OUTPUT
+
+![alt text](forin3.sh.png) 
 cat forin1.sh 
 ```bash
 #!/bin/bash
@@ -854,8 +858,8 @@ echo The next state is $test
 done
 ```
 $ chmod 755 forin1.sh
-
 ## OUTPUT
+![alt text](forin1.shmmfmfmf.png)
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -893,6 +897,7 @@ $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
 ![alt text](<forctype shff.png>)
+
 cat forctype1.sh 
 ```bash
 #!/bin/bash
